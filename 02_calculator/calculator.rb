@@ -14,3 +14,16 @@ def sum(nums=[])
   nums.each{|i| total+=i}
   return total
 end
+def multiply(*numbers)
+  total=1
+  numbers.each{|i| total*=i}
+  return total
+end
+def power(base,exponent)
+  base**exponent
+end
+def factorial(num)
+  total=1
+  num.downto(1){|i| total*=i} unless num==0
+  return total
+end
